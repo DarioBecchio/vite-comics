@@ -3,15 +3,15 @@ export default {
   name: "AppHeader",
 };
 </script>
-
-<header class="NavBar container">
+<template>
+  <header class="NavBar container">
     <div class="logo">
       <img src="/img/dc-logo.png" alt="" />
     </div>
     <nav>
       <ul class="MainMenu">
         <li><a href="#">CHARACTERS</a></li>
-        <li><a href="#">COMICS</a></li>
+        <li><a href="#" class="active">COMICS</a></li>
         <li><a href="#">MOVIES</a></li>
         <li><a href="#">TV</a></li>
         <li><a href="#">GAME</a></li>
@@ -23,17 +23,33 @@ export default {
       </ul>
     </nav>
   </header>
+</template>
+
 <style scoped>
 .NavBar {
   display: flex;
   justify-content: space-between;
 }
+header {
+  background-color: var(--dc-light);
 
-li {
-  list-style: none;
+  & .MainMenu {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+    text-align: center;
+  }
   & a {
     text-decoration: none;
-    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--dc-lgDark);
+    font-weight: 600;
+    font-size: large;
+  }
+
+  & a.active {
+    background-color: aqua;
   }
 }
 

@@ -1,1 +1,10 @@
+:root {
+  --dc-light: #ffffff;
+  --dc-lgDark: #303030;
+  --dc-darker: #1c1c1c;
+  --dc-blue: #0282f9;
+}
 
+body {
+  font-style: sans-serif;
+}
