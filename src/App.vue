@@ -16,6 +16,7 @@ export default {
   <AppHeader></AppHeader>
   <AppMain></AppMain>
   <AppFooter></AppFooter>
+  <div>Prova</div>
 </template>
 
 <style></style>
