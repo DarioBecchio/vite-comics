@@ -163,4 +163,7 @@ export default {
     color: var(--dc-light);
   }
 }
+.col {
+  width: calc(100% / 12 * 4);
+}
 </style>
