@@ -1,8 +1,10 @@
 <script>
+import AppJumbotron from "./AppJumbotron.vue";
 import ComicCards from "./ComicCards.vue";
 export default {
   name: "AppMain",
   components: {
+    AppJumbotron,
     ComicCards,
   },
   data() {
@@ -96,6 +98,13 @@ export default {
 };
 </script>
 <template>
+  <main>
+    <AppJumbotron></AppJumbotron>
+    <!-- Section prodotti -->
+
+    <!-- Banner -->
+  </main>
+
   <div class="cardmenu container">
     <div class="container">
       <div class="row">
@@ -138,16 +147,7 @@ export default {
   </div>
 </template>
 
-<style>
-.container {
-  width: 70%;
-  max-width: 1176px;
-  margin: auto;
-}
-.cardmenu {
-  background-image: url(./img/jumbotron.jpg);
-  height: 300px;
-}
+<style scoped>
 .lowermenu {
   background-color: var(--dc-blue);
 }
