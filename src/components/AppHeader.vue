@@ -4,12 +4,12 @@ export default {
 };
 </script>
 <template>
-  <header class="NavBar container">
-    <div class="logo">
-      <img src="/img/dc-logo.png" alt="" />
-    </div>
-    <nav>
-      <ul class="MainMenu">
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="/img/dc-logo.png" alt="" />
+      </div>
+      <ul>
         <li><a href="#">CHARACTERS</a></li>
         <li><a href="#" class="active">COMICS</a></li>
         <li><a href="#">MOVIES</a></li>
@@ -26,40 +26,37 @@ export default {
 </template>
 
 <style scoped>
-.NavBar {
-  display: flex;
-  justify-content: space-between;
-}
 header {
   background-color: var(--dc-light);
 
-  & .MainMenu {
-    list-style: none;
+  & nav {
     display: flex;
-    justify-content: right;
-    margin-top: 2rem;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .logo > img {
+    width: 70px;
+  }
+  & ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  & ul > li {
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: 4px solid transparent;
+  }
+
+  & ul > li:hover {
+    border-bottom: 4px solid var(--dc-blue);
   }
   & a {
     text-decoration: none;
-    padding: 0.5rem 1rem;
     color: var(--dc-lgDark);
     font-weight: 600;
-    font-size: large;
   }
-
-  & a.active {
-    background-color: aqua;
-  }
-}
-
-.container {
-  width: 70%;
-  max-width: 1176px;
-  margin: auto;
-}
-.MainMenu {
-  display: flex;
-  justify-content: space-between;
 }
 </style>
