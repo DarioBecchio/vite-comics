@@ -101,19 +101,20 @@ export default {
   <main>
     <AppJumbotron></AppJumbotron>
     <!-- Section prodotti -->
-
+    <section class="comics">
+      <div class="container">
+        <h3>Current series</h3>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-2" v-for="card in cards">
+            <ComicCards :card="card"></ComicCards>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Banner -->
   </main>
 
-  <div class="cardmenu container">
-    <div class="container">
-      <div class="row">
-        <div class="col" v-for="card in cards">
-          <ProductCard :card="card"></ProductCard>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="cardmenu container"></div>
   <div class="lowermenu container">
     <ul class="shopsbar">
       <li>
@@ -148,6 +149,15 @@ export default {
 </template>
 
 <style scoped>
+.comics {
+  & h3 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--dc-blue);
+    color: var(--dc-light);
+    margin: -2rem 0 0.5rem;
+  }
+}
 .lowermenu {
   background-color: var(--dc-blue);
 }
@@ -162,8 +172,5 @@ export default {
     align-items: center;
     color: var(--dc-light);
   }
-}
-.col {
-  width: calc(100% / 12 * 4);
 }
 </style>
