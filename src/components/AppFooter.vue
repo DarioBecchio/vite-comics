@@ -52,44 +52,28 @@ export default {
         </div>
       </div>
     </div>
+    <div class="bottom">
+      <div class="container">
+        <a href="" class="signup">Sign-up now!</a>
+        <div class="social">
+          <strong>Follow us</strong>
+          <a href=""><img src="./img/footer-facebook.png" alt="" /></a>
+          <a href=""><img src="./img/footer-twitter.png" alt="" /></a>
+          <a href=""><img src="./img/footer-youtube.png" alt="" /></a>
+          <a href=""><img src="./img/footer-pinterest.png" alt="" /></a>
+          <a href=""><img src="./img/footer-periscope.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
   </footer>
-  <div class="logobig">
-    <img src="./img/dc-logo-bg.png" alt="" />
-  </div>
-  <div class="bottom"></div>
-  <div class="bottommenu container">
-    <div class="signup">
-      <button>SIGN-UP NOW</button>
-    </div>
-    <div class="followusmenu">
-      <ul>
-        <li>
-          <a href="#"><img src="./img/footer-facebook.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./img/footer-twitter.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./img/footer-youtube.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./img/footer-pinterest.png" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./img/footer-periscope.png" alt="" /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </template>
 <style scoped>
 footer {
-  padding: 1rem 0;
   & > .top {
-    background-image: url("./img/footer-bg.jpg");
+    background-image: url("./img/dc-logo-bg.png"), url("./img/footer-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: 500px, cover;
+    background-position: 80%, top;
     & h3 {
       color: var(--dc-light);
       margin: 1.5rem 0;
@@ -98,6 +82,32 @@ footer {
       color: lightgrey;
       text-decoration: none;
       line-height: 1.5rem;
+    }
+  }
+
+  & > .bottom {
+    & .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & .signup {
+      border: 1px solid var(--dc-blue);
+      padding: 0.75rem;
+      color: var(--dc-light);
+      text-transform: uppercase;
+    }
+
+    & .social {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    & strong {
+      text-transform: uppercase;
+      color: var(--dc-light);
     }
   }
 }
