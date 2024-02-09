@@ -112,40 +112,27 @@ export default {
       </div>
     </section>
     <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-merchandise.png" alt="" />
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-subscriptions.png" alt="" />
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-shop-locator.png" alt="" />
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-dc-power-visa.svg" alt="" />
+        </div>
+      </div>
+    </div>
   </main>
-
-  <div class="cardmenu container"></div>
-  <div class="lowermenu container">
-    <ul class="shopsbar">
-      <li>
-        <a href="#"
-          ><img src="/img/buy-comics-digital-comics.png" alt="" /> DIGITAL
-          COMICS</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><img src="/img/buy-comics-merchandise.png" alt="" />DC MERCHANDISE</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><img src="/img/buy-comics-subscriptions.png" alt="" />SUBSCRIPTION</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><img src="/img/buy-comics-shop-locator.png" alt="" />COMIC SHOP
-          LOCATOR</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><img src="/img/buy-dc-power-visa.svg" alt="" />DC POWER VISA</a
-        >
-      </li>
-    </ul>
-  </div>
 </template>
 
 <style scoped>
@@ -158,8 +145,18 @@ export default {
     margin: -2rem 0 0.5rem;
   }
 }
-.lowermenu {
+.banner {
   background-color: var(--dc-blue);
+  padding: 2rem 0;
+  & > .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  & .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 .shopsbar {
   display: flex;

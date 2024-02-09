@@ -4,50 +4,59 @@ export default {
 };
 </script>
 <template>
-  <div class="resume container">
-    <div class="footermenu">
-      <div class="linkmenu">
-        <ul class="leftmenu">
-          <h3>DC COMICS</h3>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <h3>SHOP</h3>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <ul class="middlemenu">
-          <h3>DC</h3>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <ul class="rightmenu">
-          <h3>SITES</h3>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div class="logobig">
-        <img src="./img/dc-logo-bg.png" alt="" />
+  <footer>
+    <div class="top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled leftmenu">
+              <h3>DC COMICS</h3>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <h3>SHOP</h3>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled middlemenu">
+              <h3>DC</h3>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled rightmenu">
+              <h3>SITES</h3>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+  </footer>
+  <div class="logobig">
+    <img src="./img/dc-logo-bg.png" alt="" />
   </div>
+  <div class="bottom"></div>
   <div class="bottommenu container">
     <div class="signup">
       <button>SIGN-UP NOW</button>
@@ -73,29 +82,23 @@ export default {
     </div>
   </div>
 </template>
-<style>
-.container {
-  width: 70%;
-  max-width: 1176px;
-  margin: auto;
-}
-.resume {
-  background-image: url("./img/footer-bg.jpg");
-}
-.linkmenu {
-  display: flex;
-  list-style: none;
-}
-.footermenu {
-  display: flex;
-  justify-content: space-between;
-}
-.bottommenu {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--dc-lgDark);
-}
-.followusmenu {
-  display: flex;
+<style scoped>
+footer {
+  padding: 1rem 0;
+  & > .top {
+    background-image: url("./img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    & h3 {
+      color: var(--dc-light);
+      margin: 1.5rem 0;
+    }
+    & ul a {
+      color: lightgrey;
+      text-decoration: none;
+      line-height: 1.5rem;
+    }
+  }
 }
 </style>

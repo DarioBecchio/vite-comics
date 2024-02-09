@@ -31,6 +31,13 @@ img {
 [class^="col-"] {
   padding: 1rem;
 }
+
+.col {
+  width: auto;
+  flex-basis: auto;
+  padding: 1rem;
+}
+
 .col-12 {
   width: 100%;
 }
